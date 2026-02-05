@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 st.title("📈 Sales Forecasting")
-st.caption("Prediksi penjualan berbasis Time Series untuk mendukung keputusan bisnis")
+
 st.markdown("""
 Halaman ini menampilkan **prediksi penjualan** menggunakan
 model **Prophet Time Series** yang telah dilatih sebelumnya
@@ -59,23 +59,15 @@ model, freq, max_horizon, horizon_label = load_model(level)
 # =========================
 # Forecast Setting
 # =========================
-with st.container():
-    st.subheader("🔧 Forecast Configuration")
-    st.caption("Atur level dan horizon prediksi sesuai kebutuhan bisnis")
+st.subheader("🔧 Forecast Settings")
 
-    level = st.radio(
-        "Level Forecast",
-        ["Bulanan", "Mingguan"],
-        horizontal=True
-    )
-
-    horizon = st.slider(
-        f"Forecast Horizon ({horizon_label} ke depan)",
-        min_value=3,
-        max_value=max_horizon,
-        value=12 if level == "Bulanan" else 8,
-        step=1
-    )
+horizon = st.slider(
+    f"Forecast Horizon ({horizon_label} ke depan)",
+    min_value=3,
+    max_value=max_horizon,
+    value=12 if level == "Bulanan" else 8,
+    step=1
+)
 
 # =========================
 # Generate Forecast
@@ -151,6 +143,7 @@ with col2:
         value=f"{rmse:,.0f}"
     )
 
+
 # =========================
 # Forecast Table
 # =========================
@@ -187,5 +180,3 @@ st.info(f"""
 - Forecast **bulanan** lebih sesuai untuk perencanaan strategis dan target bisnis.  
 - Confidence interval membantu manajemen mengantisipasi risiko permintaan.
 """)
-
-st.caption("Model: Prophet Time Series • Evaluasi: MAE & RMSE • Data: Superstore Sales")
