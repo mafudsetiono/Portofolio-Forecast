@@ -6,6 +6,17 @@ __pycache__/
 # C extensions
 *.so
 
+# Virtual environment
+venv/
+porto_venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/secrets.toml
+
 # Distribution / packaging
 .Python
 build/
