@@ -32,8 +32,8 @@ with col2:
     st.subheader("Halo, saya Mafud 👋")
 
     st.markdown("""
-Saya adalah **Mafud Satrio Setiono**, seorang **Data Enthusiast** yang berfokus pada
-**Data Analysis, Forecasting, dan Business Insight**.
+Saya **Mafud Satrio Setiono**, seorang **Data Enthusiast** yang berfokus pada
+**Data Engineering, Data Analysis, Data Scientist, dan Business Insight**.
 
 Saya memiliki latar belakang **Teknik Informatika** dan pengalaman mengerjakan
 berbagai proyek analisis data menggunakan **Python, SQL**, serta tools visualisasi
