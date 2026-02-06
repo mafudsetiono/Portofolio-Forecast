@@ -47,6 +47,11 @@ This project addresses those needs using historical sales data.
 
 ---
 
+## Link Deploy
+
+https://portofolio-forecast-mafud.streamlit.app/
+
+---
 ## 📁 Project Structure
 
 ```text
