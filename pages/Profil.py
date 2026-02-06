@@ -62,7 +62,7 @@ with col1:
 
 with col2:
     st.markdown("""
-**🐍 Programming & Database**
+**💻 Programming & Database**
 - Python  
 - PostgreSQL  
 - MySQL
@@ -76,6 +76,8 @@ with col3:
 - Communication  
 - Teamwork  
 - Time Management
+- Adaptability
+- Growth Mindset
 """)
 
 # =========================
@@ -88,6 +90,8 @@ st.markdown("""
 - Mampu menerjemahkan data menjadi **insight yang actionable**
 - Terbiasa bekerja dengan **data historis & time series**
 - Fokus pada **impact bisnis**, bukan hanya model
+- Memiliki **rasa ingin tahu yang tinggi** dan selalu berusaha belajar hal baru
+- Memiliki **etika kerja yang kuat** dan selalu berusaha memberikan yang terbaik
 """)
 
 # =========================
